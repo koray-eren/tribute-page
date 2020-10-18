@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <style>
+html{
+    font-family: Helvetica;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#flex-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-position: inside;
+    width: fit-content;
+    max-width: 90%;
+}
+li{
+    line-height: 2em;
+    margin: auto;
+    padding: 10px 0px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 </style>
 
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Koray Eren - FreeCodeCamp - Tribute Page</title>
+        <title>Koray Eren - Tribute Page Project - freeCodeCamp</title>
     </head>
     <body>
         <main id="main">
-            <h1>Koray Eren - FreeCodeCamp - Tribute Page</h1>
+            <h1 id="title">Dr. Norman Borlaug - Tribute Page - FreeCodeCamp Project</h1>
+            <p>The man who saved a billion lives</p>
+            <div id="img-div">
+                <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger">
+            </div>
+            <caption id="img-caption"> Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</caption>
+            <p id="tribute-info">
+                <h2>Summary</h2>
+                <ul id="flex-list">
+                    <li>American agronomist who led initiatives worldwide that contributed to the extensive increases in agricultural production termed the Green Revolution</li>
+                    <li>Borlaug was awarded multiple honors for his work, including the Nobel Peace Prize, the Presidential Medal of Freedom and the Congressional Gold Medal</li>
+                    <li>Borlaug was often called "the father of the Green Revolution", and is credited with saving over a billion people worldwide from starvation</li>
+                    <li>He developed semi-dwarf, high-yield, disease-resistant wheat varieties. During the mid-20th century, Borlaug led the introduction of these high-yielding varieties combined with modern agricultural production techniques to Mexico, Pakistan, and India. As a result, Mexico became a net exporter of wheat by 1963. Between 1965 and 1970, wheat yields nearly doubled in Pakistan and India, greatly improving the food security in those nations</li>
+                </ul>
+            </p>
+            <p>Learn more about Dr. Borlaug at his <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug">Wikipedia page</a></p>
+            <p>View a more comprehensive version of this page <a id="tribute-link" href="https://codepen.io/freeCodeCamp/full/zNqgVx">here</a></p>
         </main>
     </body>
 </html>
